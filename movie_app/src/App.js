@@ -11,8 +11,19 @@ class App extends React.Component{
     minus = () => { 
         this.setState(current => ({ count: current.count - 1}));
     };
-  render(){
-      return (
+
+    componentDidMount() {
+        console.log("Component rendered");
+    }
+    componentDidUpdate() {
+        console.log("I just updated");
+    }
+    componentWillUnmount() {
+        console.log("Goodbye, cruel world");
+    }
+    render(){
+        console.log("I'm rendering");
+        return (
             <div>
                 <h1>I am a class component! {this.state.count}</h1>
                 <button onClick={this.add}>Add</button>

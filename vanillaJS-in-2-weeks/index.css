@@ -1,6 +1,11 @@
 body {
-    background-color: aquamarine;
+    background-color: midnightblue;
 }
 
 h1 {
+    color: lemonchiffon;
+}
+
+.clicked {
+    color: yellow;
 }

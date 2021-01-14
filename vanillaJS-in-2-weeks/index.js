@@ -1,17 +1,30 @@
-// const title = document.getElementById("title");
 const title = document.querySelector("#title");
+
+const BASE_COLOR = "white";
+const OTHER_COLOR = "blue";
+
 title.innerHTML = "Hello fro JS!";
 title.style.color = 'blue';
 document.title = "I own you now";
 
-// function handleResize(){
-//     console.log("I have been resized");
-// }
-
-// window.addEventListener("resize", handleResize);
-
 function handleClick(){
-    title.style.color = 'white';
+    const currentColor = title.style.color;
+
+    if (currentColor == BASE_COLOR){
+        title.style.color = OTHER_COLOR;
+    } else {
+        title.style.color = BASE_COLOR;
+    }
 }
 
-title.addEventListener("click", handleClick)
+function init(){
+    title.style.color = BASE_COLOR;
+    title.addEventListener("click", handleClick);
+}
+init();
+
+function handleOffline(){
+    console.log('Tralala');
+}
+
+window.addEventListener("offline", handleOffline);

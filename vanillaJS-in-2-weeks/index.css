@@ -1,20 +1,21 @@
 body {
-    background-color: midnightblue;
+    background-color: #ecf0f1;
+  }
+.btn {
+    cursor: pointer;
 }
 
-h1 {
-    color: lemonchiffon;
+body {
+    color: #34495e;
 }
 
 .clicked {
-    color: yellow;
+    color: #7f8c8d;
 }
-
 .form,
 .greetings {
     display: none;
 }
-
 .showing {
     display: block;
 }
